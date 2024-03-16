@@ -20,15 +20,15 @@ BeforeAll(async function () {
     switch (browserType) {
         case 'chrome':
         case 'gc':
-            browser = await chromium.launch({ headless: false, channel: "chrome", args: ['--start-maximized'] });
+            browser = await chromium.launch({ headless: true, channel: "chrome", args: ['--start-maximized'] });
             break;
         case 'firefox':
         case 'ff':
-            browser = await firefox.launch({ headless: false, args: ['--start-maximized'] });
+            browser = await firefox.launch({ headless: true, args: ['--start-maximized'] });
             break;
         case 'edge':
         case 'msedge':
-            browser = await chromium.launch({ headless: false, channel: "msedge", args: ['--start-maximized'] });
+            browser = await chromium.launch({ headless: true, channel: "msedge", args: ['--start-maximized'] });
             break;
         default:
             throw new Error(`invalid browser type ${browserType} is passed..! pls correct it.`);
