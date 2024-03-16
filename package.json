@@ -11,7 +11,7 @@
     "ts",
     "js"
   ],
-  "author": "equality tech",
+  "author": "BhanuPrakash Y",
   "license": "ISC",
   "devDependencies": {
     "@cucumber/cucumber": "^10.3.1",
